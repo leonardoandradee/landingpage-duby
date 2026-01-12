@@ -1,0 +1,48 @@
+footer {
+  padding-top: 5.6rem;
+  background-color: var(--brand-purple-01);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .top {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 3.2rem;
+      width: 100%;
+      border-bottom: 0.2rem solid var(--gray-02);
+    }
+    .bottom {
+      width: 100%;
+      border-bottom: 0.2rem solid var(--brand-green);
+      p {
+        text-align: center;
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: var(--gray-03);
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .container {
+      .bottom {
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 386px) {
+    .container {
+      .bottom {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
