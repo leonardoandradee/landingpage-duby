@@ -185,6 +185,8 @@
 }
 
 .s-list {
+  position: relative;
+  overflow: hidden;
   padding-top: 12rem;
   .container {
     display: flex;
@@ -285,6 +287,8 @@
 }
 
 .s-feature {
+  position: relative;
+  overflow: hidden;
   padding-top: 12rem;
   .container {
     display: flex;
@@ -398,6 +402,8 @@
 }
 
 .s-differentiators {
+  position: relative;
+  overflow: hidden;
   padding-top: 12rem;
   .container {
     display: flex;
@@ -470,6 +476,8 @@
 }
 
 .s-testimonials {
+  position: relative;
+  overflow: hidden;
   padding-top: 12rem;
   padding-bottom: 12rem;
   .container {
@@ -545,6 +553,8 @@
 }
 
 .s-lojas {
+  position: relative;
+  overflow: hidden;
   padding: 3.2rem 0;
   background-color: var(--brand-purple-01);
   position: relative;
@@ -587,6 +597,8 @@
 }
 
 .s-plans {
+  position: relative;
+  overflow: hidden;
   padding-top: 12rem;
   padding-bottom: 12rem;
   .container {
@@ -676,6 +688,8 @@
 }
 
 .s-illustration {
+  position: relative;
+  overflow: hidden;
   position: relative;
   overflow: hidden;
   .container {
@@ -936,6 +950,8 @@
 }
 
 .s-faq {
+  position: relative;
+  overflow: hidden;
   padding-top: 12rem;
   padding-bottom: 8rem;
   .container {
