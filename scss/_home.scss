@@ -51,7 +51,7 @@
       }
     }
   }
-  @media (max-width: 1440px) {
+  @media (max-width: 1680px) {
     padding-bottom: 8rem;
     .container {
       .right {
@@ -77,12 +77,15 @@
         .image-s-hero-01 {
           width: 20%;
           margin-left: 6.4rem;
+          top: 32rem;
         }
         .image-s-hero-02 {
           width: 30%;
+          top: 10rem;
           right: 8rem;
         }
         .image-s-hero-03 {
+          top: 6.4rem;
           width: 60%;
         }
       }
@@ -97,6 +100,10 @@
         }
       }
       .right {
+        .image-s-hero-01 {
+          top: 24rem;
+          margin-left: 0;
+        }
         .image-s-hero-02 {
           right: 5.6rem;
         }
