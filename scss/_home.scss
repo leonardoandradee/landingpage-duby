@@ -602,85 +602,223 @@
   padding-top: 12rem;
   padding-bottom: 12rem;
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     .top {
-      h2 {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-size: 4.8rem;
-        font-weight: 400;
-        line-height: 110%;
-        color: var(--brand-purple-02);
-        margin-bottom: 4rem;
-        span {
-          color: var(--brand-green);
-          font-weight: 700;
+      .plan {
+        &.plan-02,
+        &.plan-04 {
+          flex-direction: row-reverse;
+          .plan-right {
+            margin-left: 0;
+            margin-right: 3.2rem;
+          }
+        }
+        &:not(:last-child) {
+          margin-bottom: 6.4rem;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .plan-left {
+          width: 100%;
+          max-width: 59.2rem;
+          .title {
+            h4 {
+              font-family: "Poppins", sans-serif;
+              font-size: 3.2rem;
+              line-height: 70%;
+              font-weight: 700;
+              color: var(--brand-green);
+              margin-bottom: 1.6rem;
+            }
+            h3 {
+              font-family: "Poppins", sans-serif;
+              font-size: 4rem;
+              line-height: 70%;
+              font-weight: 700;
+              color: var(--brand-purple-01);
+              margin-bottom: 2.4rem;
+            }
+          }
+          hr {
+            border-top: 1px solid var(--brand-green);
+          }
+          .info {
+            p {
+              margin-top: 1.6rem;
+              font-family: "Poppins", sans-serif;
+              font-size: 1.6rem;
+              line-height: 110%;
+              color: var(--gray-02);
+              font-weight: 400;
+              margin-bottom: 2.4rem;
+            }
+          }
+        }
+        .plan-right {
+          margin-left: 3.2rem;
+          padding: 2rem 2rem;
+          border: 0.1rem solid var(--brand-green);
         }
       }
     }
     .bottom {
-      .h3-plans {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-size: 2.4rem;
-        font-weight: 600;
-        line-height: 150%;
-        color: var(--brand-purple-02);
-        margin-bottom: 3.2rem;
-      }
-      .plans {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8rem;
+      .price {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         flex-direction: column;
-        .btn {
-          margin-bottom: 2.4rem;
+        width: 100%;
+        max-width: 38.4rem;
+        &:not(:last-child) {
+          margin-right: 3.2rem;
         }
-        .plan {
-          &:not(:last-child) {
-            margin-bottom: 2.4rem;
+        .top-price {
+          width: 100%;
+          padding: 3.2rem;
+          border: 0.1rem solid var(--brand-purple-01);
+          background-color: var(--brand-purple-01);
+          border-radius: 0.8rem 0.8rem 0 0;
+          h3 {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 3.2rem;
+            line-height: 100%;
+            font-weight: 700;
+            color: var(--white);
           }
         }
-      }
-      .info-footer {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-size: 1.6rem;
-        color: var(--brand-purple-02);
+        .bottom-price {
+          width: 100%;
+          padding: 3.2rem;
+          border: 0.1rem solid var(--brand-purple-01);
+          border-radius: 0 0 0.8rem 0.8rem;
+          text-align: center;
+          h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 5.8rem;
+            line-height: 100%;
+            font-weight: 700;
+            color: var(--brand-green);
+          }
+          p {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.6rem;
+            line-height: 100%;
+            color: var(--brand-green);
+            font-weight: 400;
+          }
+        }
       }
     }
   }
   @media (max-width: 768px) {
     .container {
       .top {
-        h2 {
-          font-size: 4rem;
-        }
-      }
-    }
-  }
-  @media (max-width: 480px) {
-    .container {
-      .top {
-        h2 {
-          font-size: 3.2rem;
-        }
-      }
-    }
-  }
-  @media (max-width: 420px) {
-    .container {
-      .top {
-        h2 {
-          font-size: 2.4rem;
-          margin-bottom: 2.4rem;
+        .plan {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          &.plan-02,
+          &.plan-04 {
+            flex-direction: column;
+            .plan-right {
+              margin-right: 0;
+            }
+          }
+          .plan-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 4rem;
+            .title {
+              h4,
+              h3 {
+                text-align: center;
+              }
+            }
+            hr {
+              display: block;
+            }
+            .info {
+              p {
+                text-align: center;
+              }
+            }
+          }
+          .plan-right {
+            margin-left: 0;
+          }
         }
       }
       .bottom {
-        .h3-plans {
-          font-size: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        .price {
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 386px) {
+    .container {
+      .top {
+        .plan {
+          .plan-left {
+            .title {
+              h4 {
+                font-size: 2.4rem;
+              }
+              h3 {
+                font-size: 3.2rem;
+                line-height: 100%;
+                margin-bottom: 0.8rem;
+              }
+            }
+            hr {
+              display: none;
+            }
+            .info {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              p {
+                width: 90%;
+                font-size: 1.4rem;
+              }
+            }
+          }
+          .plan-right {
+            width: 100%;
+            .dashboard {
+              iframe {
+                width: 100%;
+                height: 24rem;
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        .price {
+          width: 80%;
+          .top-price {
+            h3 {
+              font-size: 2.4rem;
+            }
+          }
+          .bottom-price {
+            h2 {
+              font-size: 4rem;
+            }
+          }
         }
       }
     }

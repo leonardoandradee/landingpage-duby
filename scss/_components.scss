@@ -8,7 +8,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   text-decoration: none;
-  border-radius: 1.6rem;
+  border-radius: 0.8rem;
   border: 0.2rem solid var(--brand-green);
   transition: background-color 0.3s ease;
 
@@ -27,7 +27,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   text-decoration: none;
-  border-radius: 1.6rem;
+  border-radius: 0.8rem;
   border: 0.2rem solid var(--white);
   transition: background-color 0.3s ease;
   &:hover {
@@ -225,7 +225,7 @@
   }
 }
 
-.plan {
+/* .plan {
   background-color: var(--gray-05);
   border-radius: 1.6rem;
   width: 100%;
@@ -324,3 +324,4 @@
     }
   }
 }
+ */
